@@ -1,0 +1,74 @@
+import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root{
+    --primary-color : #e2e8f0;
+    --secondary-color : #f1f5f9;
+    --tertiary-color : #fcd34d;
+    --text-color : #64748b;
+    --dark-green : #059669;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    background-color: var(--secondary-color);
+}
+
+.card{
+ position : relative;
+ height : 180px;
+ width : 220px;
+ border-radius: 0.5rem;
+ background-color: var(--primary-color) ;
+ box-shadow: 0 0 0.5rem 0.1rem black;
+ padding : 1rem 0.5rem;
+ transition : 0.3s;
+ cursor : pointer;
+}
+.card:hover{
+    height : 350px;
+}
+
+.imgBox{
+    position : relative;
+    height : 100%;
+    width : 100%;
+    z-index : 2;
+}
+
+img{
+    width : 100%;
+    border-radius : 0.5rem;
+
+}
+
+
+
+.content{
+    text-align: center;
+    transform : translateY(-150px);
+    transition : 0.5rem;
+    font-size: small;
+    transform : translateY(-520px);
+    opacity : 0;
+}
+
+.head{
+color : var(--text-color);
+}
+
+.card:hover > .content{
+    transform : translateY(-200px);
+    opacity : 1;
+    transition : 0.3s;
+}
+
+.countName{
+    padding: 0.2rem;
+    border : 0.13rem solid;
+    border-radius : 0.5rem;
+}
+
+
